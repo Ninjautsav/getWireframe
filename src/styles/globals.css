@@ -2,7 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+@font-face {
+  font-family: "Nagal_VF";
+  src: url("../pages/fonts/Nagal_VF.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../pages/fonts/Poppins.ttf") format("opentype");
+}
+.navbarlist {
+  @apply py-4 px-6 border-r max-md:border-none border-black font-medium text-lg max-lg:text-base font-Nagal_VF;
+}
+
+.allbutton {
+  @apply font-Nagal_VF font-medium text-22;
+}
+
+.allmainbutton {
+  @apply border py-4 px-8 bg-[#FFED00] border-[#1E1E1E];
+}
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -12,7 +32,7 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   color: var(--foreground);
