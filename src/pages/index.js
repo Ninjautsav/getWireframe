@@ -1,5 +1,12 @@
+import Header from "./layouts/header";
+import Footer from "./layouts/footer";
 function Index() {
-  return <>Hello This is Index</>;
+  return (
+    <>
+      <Header />
+      <Footer />
+    </>
+  );
 }
 
 export default Index;
